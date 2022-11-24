@@ -1,0 +1,32 @@
+@import "./variables";
+
+.burger {
+  display: none;
+  float: right;
+  margin: .5rem;
+  div {
+    background-color: $white;
+    width: 1.5rem;
+    height: 0.4rem;
+    transition: all .7s ease;
+    margin: 0.1rem;
+    cursor: pointer;
+  }
+}
+
+//Responsive
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
+
+.burgerToggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.burgerToggle .line2 {
+  opacity: 0;
+}
+.burgerToggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

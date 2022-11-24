@@ -1,0 +1,30 @@
+@import "./header";
+@import "./dashboard";
+@import "./variables";
+@import "./burgerMenu";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Calligraffitti", sans-serif;
+}
+
+/* Scrollbar */
+//width
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+//Track
+::-webkit-scrollbar-track {
+  background: $white;
+}
+//Handle
+::-webkit-scrollbar-thumb {
+  background: $prime;
+  border-radius: 1rem;
+}
+//Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: $prime;
+}
