@@ -1,0 +1,11 @@
+.dashboard {
+  width: 80%;
+  float: right;
+}
+
+//Dashboard responsive
+@media screen and (max-width: 768px) {
+  .dashboard {
+    width: 100%;
+  }
+}

@@ -1,0 +1,74 @@
+@import "./variables";
+
+//Responsive mobile nav
+.mobile-nav {
+  display: none;
+  height: 7vh;
+  background-color: $prime;
+  .mobile-logo {
+    color: $white;
+  }
+}
+
+//Navbar
+nav {
+  width: 20%;
+  .logo, .subtitle{
+    color: $prime;
+    border-bottom: .1rem solid $prime;
+  }
+  .nav-links {
+    color: $prime;
+  }
+  .link-color {
+    color: $prime;
+    transition: color .3s ease;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+//Header responsive
+@media screen and (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+  nav {
+    width: 50%;
+    height: 100vh;
+    background-color: $prime;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    .logo, .subtitle {
+      color: $white;
+    }
+    .nav-links {
+      left: 0;
+      top: 0;
+      color: $white;
+    }
+    .nav-links li{
+      opacity: 0;
+    }
+    .link-color {
+      color: $white;
+    }
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
