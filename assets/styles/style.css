@@ -1,11 +1,11 @@
 .mobile-nav {
   display: none;
   height: 7vh;
-  background-color: #570B24;
+  background-color: #FFFFFF;
 }
 
 .mobile-nav .mobile-logo {
-  color: #FFFFFF;
+  color: #570B24;
 }
 
 nav {
@@ -113,7 +113,7 @@ nav .link-color:hover {
 }
 
 .burger div {
-  background-color: #FFFFFF;
+  background-color: #570B24;
   width: 1.5rem;
   height: 0.4rem;
   -webkit-transition: all .7s ease;
