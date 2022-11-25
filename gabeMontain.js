@@ -24,14 +24,6 @@ const navSlide = () => {
     //Burger animation
     burger.classList.toggle("burgerToggle");
   });
-
-  //Close the menu bar on clicking outisde
-  // window.addEventListener("click", (e) => {
-  //   if (!document.querySelector("nav").contains(e.target)) {
-  //     console.log("eeeeeee");
-  //     nav.classList.remove("nav-active");
-  //   }
-  // });
 };
 
 navSlide();
